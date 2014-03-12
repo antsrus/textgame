@@ -4,7 +4,6 @@ public class Play {
 		System.out.println("OK lets start the game. Unfortunantly thre is no save option right now please keep the game open to continue playing later");
 		System.out.println("press enter to continue");
 		Scanner beginPlaying = new Scanner(System.in);
-		String play = beginPlaying.nextLine();
 		System.out.println("As the sun rises, you open your eyes and greet\n the morning with optimisim. For a while you lay in bed deciding what to do first.");
 		System.out.println("1   Sit up and get drest.");
 		System.out.println("2   Go back to bed for a while.");
@@ -38,5 +37,9 @@ public class Play {
 				
 			}
 		}
+		selections.close();
+		beginPlaying.close();
+		
 	}
 }
+

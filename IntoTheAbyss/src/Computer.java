@@ -26,6 +26,7 @@ public class Computer {
 			Masterbedroom bedroomOptions = new Masterbedroom();
 			bedroomOptions.enterBedroom();
 		}
+		userSelector.close();
 
 	}
 }

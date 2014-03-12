@@ -22,6 +22,7 @@ public class RoomSelection {
 			Garage enterGarage = new Garage();
 			enterGarage.enterGarage();
 			}
+		roomSelect.close();
 
 		}
 
@@ -44,6 +45,7 @@ public class RoomSelection {
 			Masterbedroom enterBedroom = new Masterbedroom();
 			enterBedroom.enterBedroom();
 			}
+		roomSelect.close();
 			
 
 		}

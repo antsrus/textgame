@@ -35,5 +35,6 @@ public class Masterbedroom {
 			RoomSelection roomSelection = new RoomSelection();
 			roomSelection.roomSelection2();
 		}
+		optionSelector.close();
 	}
 }

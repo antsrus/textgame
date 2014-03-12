@@ -24,14 +24,17 @@ public class Menu {
 					System.out.println("OK press enter to exit.");
 					Scanner close = new Scanner(System.in);
 					String closeGame = close.nextLine();
-					System.exit(0);
+					switch (closeGame) {
+					case"" :
+						System.exit(0);
+					}
 				default:
 					System.out.println("wrong command try again");
 				}
+				options.close();
 			}
 
 			}
 
 		}
 }
-

@@ -27,6 +27,6 @@ void bathroomOptions() {
 		Masterbedroom bedroomOptions = new Masterbedroom();
 		bedroomOptions.enterBedroom();
 	}
-	
+	userSelector.close();
 }
 }

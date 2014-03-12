@@ -17,9 +17,7 @@ public class Actions {
 	void findBasementKey() {
 		System.out.println("The basement is locked you must find the key in the Kitchen.");
 		RoomSelection roomSelect = new RoomSelection();
-		roomSelect.roomSelection();
-		String userSelection = selection.nextLine();
-		
+		roomSelect.roomSelection();		
 		}
 	
 	void cookMeal() {
