@@ -11,7 +11,7 @@ public class Actions {
 
 	// stay in bed
 	void stayInBed() {
-		System.out.println("Jacob stays in bed for another hour.");
+		System.out.println("You stay in bed for another hour.");
 	}
 	// Find the Key to the Basement 
 	void findBasementKey() {
