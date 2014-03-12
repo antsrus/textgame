@@ -23,7 +23,9 @@ void bathroomOptions() {
 	case "3" :
 		Actions takeShower = new Actions();
 		takeShower.takeShower();
-		
+	case "4" :
+		Masterbedroom bedroomOptions = new Masterbedroom();
+		bedroomOptions.enterBedroom();
 	}
 	
 }
