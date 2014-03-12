@@ -18,6 +18,9 @@ public class RoomSelection {
 		case "3" :
 			Masterbedroom enterBedroom = new Masterbedroom();
 			enterBedroom.enterBedroom();
+		case "4" :
+			Garage enterGarage = new Garage();
+			enterGarage.enterGarage();
 			}
 
 		}
