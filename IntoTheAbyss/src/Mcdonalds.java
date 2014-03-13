@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class Mcdonalds {
 	Scanner userSelector = new Scanner(System.in);
 
-	public void mcdonaldsMenu() {
+	 void mcdonaldsMenu() {
 		System.out.println("1	Hamburger");
 		System.out.println("2	Cheesebuger");
 		System.out.println("3	Chicken Nuggest");

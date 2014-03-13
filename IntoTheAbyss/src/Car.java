@@ -15,8 +15,10 @@ public class Car {
 			carOptions();
 		case "2" :
 			System.out.println("You drive to McDonald's where the order taker asks, What would you like?");
+			Mcdonalds enterMcdonalds = new Mcdonalds();
+			enterMcdonalds.mcdonaldsMenu();
 		case "3" :
-			System.out.println("You drive to the zo and pay for a ticket, you then step through the gate.");
+			System.out.println("You drive to the zoo and pay for a ticket, you then step through the gate.");
 		case "4" :
 			System.out.println("You dirve to the movie theter and watch the newest action packed movie.");
 			carOptions();
