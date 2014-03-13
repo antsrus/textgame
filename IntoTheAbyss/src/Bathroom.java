@@ -6,7 +6,7 @@ void enterBathroom() {
 	Bathroom bathroomOptions= new Bathroom();
 	bathroomOptions.bathroomOptions();
 }
-void bathroomOptions() {
+public void bathroomOptions() {
 	System.out.println("1	Use the bathroom");
 	System.out.println("2	Wash your hands");
 	System.out.println("3	Take a shower");
@@ -26,6 +26,9 @@ void bathroomOptions() {
 	case "4" :
 		Masterbedroom bedroomOptions = new Masterbedroom();
 		bedroomOptions.enterBedroom();
+	default :
+		System.out.println("Invalid Option...");
+		bathroomOptions();
 	}
 	userSelector.close();
 }

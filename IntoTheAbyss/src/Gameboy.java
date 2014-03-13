@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class Gameboy {
 	Scanner userSelector = new Scanner(System.in);
-	void gameSelection() {
+	public void gameSelection() {
 		System.out.println("1   Pokemon");
 		System.out.println("2   NBA Free Throws");
 		System.out.println("3   Mario World");
@@ -22,6 +22,9 @@ public class Gameboy {
 			System.out.println("You Stop playing Game Boy. What next?");
 			Livingroom livingRoomOptions = new Livingroom();
 			livingRoomOptions.livingRoomOptions();
+			default :
+				System.out.println("Invalid option...");
+				gameSelection();
 		}
 	}
 

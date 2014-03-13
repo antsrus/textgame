@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class RoomSelection {
-	void roomSelection() {
+	public void roomSelection() {
 		System.out.println("1   The Kitchen");
 		System.out.println("2   The Living Room");
 		System.out.println("3   The Master Bedroom");
@@ -21,6 +21,9 @@ public class RoomSelection {
 		case "4" :
 			Garage enterGarage = new Garage();
 			enterGarage.enterGarage();
+		default :
+			System.out.println("Invalid Option...");
+			roomSelection();
 			}
 		roomSelect.close();
 

@@ -9,7 +9,7 @@ public class Garage {
 		garageOptions.garageOptions();
 	}
 
-	void garageOptions() {
+	public void garageOptions() {
 		System.out.println("1	Get in your car");
 		System.out.println("2	Clean the garage");
 		System.out.println("3	Grab a soda from the fridge");
@@ -18,10 +18,10 @@ public class Garage {
 		String userSelection = userSelector.nextLine();
 		switch (userSelection) {
 		case "1":
-			System.out
-					.println("You get in your car, where would you like to go");
-			Garage garageOptions1 = new Garage();
-			garageOptions1.garageOptions();
+			System.out.println("You get in your car, where would you like to go");
+			Car carOptions = new Car();
+			carOptions.carOptions();
+			
 		case "2":
 			System.out.println("You spend a few hours cleaning the garage.");
 			Garage garageOptions2 = new Garage();
@@ -39,6 +39,9 @@ public class Garage {
 		case "5":
 			RoomSelection roomSelection = new RoomSelection();
 			roomSelection.roomSelection2();
+			default :
+				System.out.println("Invalid Option...");
+				garageOptions();
 
 		}
 	}
