@@ -2,7 +2,8 @@ import java.util.Scanner;
 
 public class Car {
 	Scanner userSelector = new Scanner(System.in);
-	public void carOptions() {
+	 void carOptions() {
+		System.out.println("You get in your car.");
 		System.out.println("1	Drive to work");
 		System.out.println("2	Drive to McDonald's");
 		System.out.println("3	Drive to the zoo");
@@ -19,6 +20,8 @@ public class Car {
 			enterMcdonalds.mcdonaldsMenu();
 		case "3" :
 			System.out.println("You drive to the zoo and pay for a ticket, you then step through the gate.");
+			Zoo zooOptions= new Zoo();
+			zooOptions.zooOptions();
 		case "4" :
 			System.out.println("You dirve to the movie theter and watch the newest action packed movie.");
 			carOptions();
