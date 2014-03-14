@@ -21,25 +21,14 @@ public class Play {
 			Actions getupNow = new Actions();
 			getupNow.getOutOfBed();
 		}
-		System.out.println("As you eat breakfast you wonder what\n what you want to do for the day.\n Play xbox or watch his favorite show The Walking Dead");
-		System.out.println("1   Play Xbox.");
-		System.out.println("2   Watch The Walking Dead.");
-		{
-			// Select Xbox or Watch The Walking Dead
-			String set2 = selections.nextLine();
-			switch(set2) {
-			case "1":
-				Actions findBasementKey = new Actions();
-				findBasementKey.findBasementKey();
-			case "2":
-				Livingroom enterLivingroom = new Livingroom();
-				enterLivingroom.enterLivingroom();
-				
-			}
-		}
-		selections.close();
+		System.out.println("As you eat breakfast you wonder what\n what you want to do for the day.");
+		RoomSelection roomSelection = new RoomSelection();
+		roomSelection.roomSelection2();
+		selections.close();	
 		beginPlaying.close();
+			}
+	
+		
 		
 	}
-}
 
