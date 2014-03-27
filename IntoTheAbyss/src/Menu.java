@@ -11,7 +11,6 @@ public class Menu {
 		System.out.println("2   Close game.");
 		{
 			// getting user input for options
-			while(true) { 
 			Scanner options = new Scanner(System.in);
 			String optionNumber = options.nextLine();
 				switch (optionNumber) {
@@ -30,6 +29,7 @@ public class Menu {
 					}
 				default:
 					System.out.println("wrong command try again");
+					menuOptions();
 				}
 				options.close();
 			}
@@ -37,4 +37,4 @@ public class Menu {
 			}
 
 		}
-}
+

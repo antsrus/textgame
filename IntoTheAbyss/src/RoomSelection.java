@@ -47,6 +47,15 @@ public class RoomSelection {
 		case "3" :
 			Masterbedroom enterBedroom = new Masterbedroom();
 			enterBedroom.enterBedroom();
+		case "4" :
+			Garage enterGarage = new Garage();
+			enterGarage.enterGarage();
+		case "5" :
+			Basement basementOptions = new Basement();
+			basementOptions.basementOptions();
+		default :
+			System.out.println("Invalid Option...");
+			roomSelection();
 			}
 		roomSelect.close();
 			
